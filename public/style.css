@@ -1,5 +1,71 @@
-body{background:#111;color:#fff;font-family:sans-serif}
-.main{display:grid;grid-template-columns:3fr 1fr;gap:10px}
-video{width:100%;border-radius:10px}
-.side{background:#222;padding:10px;border-radius:10px}
-button{padding:8px;background:#ff416c;border:none;color:white}
+body {
+  background: linear-gradient(135deg, #0b0b0b, #1a1a1a);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* MAIN BOX */
+#home {
+  text-align: center;
+  background: rgba(255,255,255,0.05);
+  padding: 40px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 40px rgba(128, 0, 0, 0.3);
+}
+
+/* TITLE */
+h2 {
+  margin: 20px 0;
+  letter-spacing: 1px;
+}
+
+/* INPUT */
+input {
+  padding: 12px;
+  width: 220px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  background: #1f1f1f;
+  color: white;
+}
+
+/* BUTTON */
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #800000, #b30000);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 15px #b30000;
+}
+
+/* CHAT SECTION */
+#chat {
+  display: none;
+  text-align: center;
+}
+
+/* MESSAGE BOX */
+.messages {
+  height: 200px;
+  overflow: auto;
+  background: #111;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
