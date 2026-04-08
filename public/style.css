@@ -1,0 +1,5 @@
+body{background:#111;color:#fff;font-family:sans-serif}
+.main{display:grid;grid-template-columns:3fr 1fr;gap:10px}
+video{width:100%;border-radius:10px}
+.side{background:#222;padding:10px;border-radius:10px}
+button{padding:8px;background:#ff416c;border:none;color:white}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Watch Party</title>
+</head>
+<body>
+
+<h2>Create Room</h2>
+<button onclick="createRoom()">Create</button>
+
+<h2>Join Room</h2>
+<input id="code" placeholder="Enter code">
+<button onclick="joinRoom()">Join</button>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+const socket = io();
+
+function createRoom(){
+  socket.emit("create-room");
+}
+
+socket.on("room-created", (id)=>{
+  window.location = "/room.html?room=" + id;
+});
+
+function joinRoom(){
+  const code = document.getElementById("code").value;
+  window.location = "/room.html?room=" + code;
+}
+</script>
+
+</body>
+</html>
